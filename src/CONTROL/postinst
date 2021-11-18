@@ -1,0 +1,13 @@
+#!/bin/sh
+echo ""
+echo "**************************************************************"
+echo "*Original coding by Dimitrij openpli.org*"
+echo "**************************************************************"
+echo "Auto enabled plugin"
+echo ""
+sleep 3
+cp /usr/lib/enigma2/python/Plugins/SystemPlugins/Autoreboot/driver-et8000-fix /etc/init.d/driver-et8000-fix
+chmod 755 /etc/init.d/driver-et8000-fix
+update-rc.d driver-et8000-fix start 07 S . stop 99 6 .
+echo ""
+exit 0

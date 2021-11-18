@@ -1,0 +1,15 @@
+Starting from autorebootET8000_1.3_mipsel.ipk.
+
+Fixes for Python3 ("is" -> "==" and 0755 -> 0o755). [plugin.py]
+
+Set start to be S07 in rcS.d (which is earlier than teh original S01
+in rc3.d). [plugin.py, postinst]
+
+Simplify setFile(). [plugin.py]
+
+Wait after starting reboot, not before. [driver-et8000-fix]
+
+Put reboot info onto fron panel. [driver-et8000-fix]
+
+To create the ipk file, run ipkg-build here.
+The package version number is taken from the CONTROL/control file.

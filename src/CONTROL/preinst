@@ -1,0 +1,5 @@
+#!/bin/sh
+
+update-rc.d -f driver-et8000-fix remove 2>/dev/null
+rm -rf /etc/init.d/driver-et8000-fix 2>/dev/null
+exit 0

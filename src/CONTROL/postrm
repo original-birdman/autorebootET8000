@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -rf /usr/lib/enigma2/python/Plugins/SystemPlugins/Autoreboot
+update-rc.d -f driver-et8000-fix remove
+rm -rf /etc/init.d/driver-et8000-fix
+rm -rf /etc/autoRebootET8000
+
+exit 0
